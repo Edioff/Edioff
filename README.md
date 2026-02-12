@@ -6,9 +6,9 @@
 
 **Bogota, Colombia** | Building data pipelines that extract, transform, and deliver at scale
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johancruzforero/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johan-andres-cruz-forero/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Edioff)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:johancruzf@outlook.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:datahive.scraping@gmail.com)
 
 </div>
 
@@ -60,6 +60,9 @@ Extracts TikTok comments at **667 comments/minute** using a hybrid API + scrapin
 ### [Vrbo Scraper](https://github.com/Edioff/vrbo-scraper) — Vacation Rental Data Extraction
 Full-featured vacation rental scraper for Vrbo: listing discovery, detail extraction, pricing, amenities, host info, and geolocation. Handles pagination, anti-bot detection, and cookie management with undetected-chromedriver.
 
+### [Booking.com Scraper](https://github.com/Edioff/booking-scraper) — Async Multi-City Hotel Extraction
+Async Booking.com scraper with **3 parallel workers** extracting hotel listings, room-level pricing, amenities, reviews, and geolocation. 2,400+ lines of Playwright async code handling complex modals, overlays, and dynamic loading.
+
 ### [CLI Web Scraper](https://github.com/Edioff/CLI-Web-Scraper) — Real Estate Puerto Rico
 Command-line tool for extracting property listings from Puerto Rican real estate portals. Built with Playwright and BeautifulSoup for reliable data extraction with structured JSON output.
 
@@ -84,7 +87,7 @@ I'm available for freelance projects in:
 - **Real Estate Data** — Specialized in property data extraction across LATAM and US markets
 - **API Reverse Engineering** — Finding and consuming undocumented APIs
 
-**Interested in working together?** Reach out via [email](mailto:johancruzf@outlook.com) or [LinkedIn](https://www.linkedin.com/in/johancruzforero/).
+**Interested in working together?** Reach out via [email](mailto:datahive.scraping@gmail.com) or [LinkedIn](https://www.linkedin.com/in/johan-andres-cruz-forero/).
 
 ---
 
