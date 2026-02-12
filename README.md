@@ -4,6 +4,8 @@
 
 ### Data Engineer & Web Scraping Specialist
 
+*Turning protected websites into structured data*
+
 **Bogota, Colombia** | Building data pipelines that extract, transform, and deliver at scale
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johan-andres-cruz-forero/)
@@ -18,7 +20,7 @@
 
 I design and operate **large-scale web scraping systems** and **data pipelines** that run in production, not just demos. My work at Red Atlas processes **50M+ property records** across 4 countries (Spain, Argentina, Colombia, Puerto Rico) from **68+ real estate portals** — running 24/7 with automated monitoring, error recovery, and incremental updates.
 
-When a website fights back with anti-bot protections, I fight smarter. I've reverse-engineered **Akamai Bot Manager v2** (512KB of obfuscated JavaScript), bypassed **Cloudflare** challenges, and cracked **Alibaba's MTOP SDK** cookie signing — all without headless browsers in the critical path.
+When a website fights back with anti-bot protections, I fight smarter. I've deeply analyzed **Akamai Bot Manager v2** (reverse-engineering 512KB of obfuscated JavaScript), bypassed **Cloudflare** challenges, and cracked **Alibaba's MTOP SDK** cookie signing — all without headless browsers in the critical path.
 
 ## Tech Stack
 
@@ -43,13 +45,17 @@ When a website fights back with anti-bot protections, I fight smarter. I've reve
 **Data:** PySpark, Pandas, FastAPI, SQLite, CSV/JSON pipelines
 **Infrastructure:** Docker Compose, proxy rotation (NetNut, residential), headless browsers at scale
 
+## Currently Exploring
+
+Building at the intersection of **web scraping and AI**: using LLM APIs (Claude, OpenAI) for intelligent HTML analysis and adaptive extraction, experimenting with AI agent orchestration for self-healing crawlers, and integrating language models into data pipelines for automated cleaning and classification.
+
 ## Featured Projects
 
-### [O'Reilly Auto Parts Scraper](https://github.com/Edioff/oreillyauto-scraper) — Akamai Bot Manager v2 Bypass
-Scraped product data from a site protected by **Akamai Bot Manager v2** without using a real browser. Reverse-engineered 512KB of obfuscated JavaScript to understand sensor data generation, cookie signing, and device fingerprinting. Built a pure HTTP scraper using `curl_cffi` for TLS impersonation.
+### [O'Reilly Auto Parts Scraper](https://github.com/Edioff/oreillyauto-scraper) — Akamai Bot Manager v2 Research
+Deep reverse engineering of a site protected by **Akamai Bot Manager v2**. Deobfuscated 512KB of JavaScript to map sensor data generation, cookie signing, and device fingerprinting. Built a scraper using `curl_cffi` for TLS impersonation with partial bypass of Akamai's detection layers.
 
-### [Akamai Bot Manager Analysis](https://github.com/Edioff/akamai-analysis) — Enterprise Anti-Bot Case Study
-Deep technical analysis of Akamai's bot detection system: how it collects 100+ browser signals, generates sensor data, and validates requests server-side. 11-page technical report documenting the full reverse engineering process.
+### [Akamai Bot Manager Analysis](https://github.com/Edioff/akamai-analysis) — Enterprise Anti-Bot Deep Dive
+Technical analysis of how Akamai Bot Manager v2 works under the hood: 100+ browser signals collected, sensor data encoding, cookie validation lifecycle, and server-side checks. 11-page technical report documenting the full reverse engineering methodology and findings.
 
 ### [Goofish Scraper](https://github.com/Edioff/goofish-scrape) — Alibaba Anti-Bot Bypass
 Scraped **18,000+ products** from Alibaba's Goofish platform by cracking the MTOP SDK cookie signing mechanism. Hybrid approach: Playwright for initial auth, then direct API calls via `curl_cffi` with Chrome TLS fingerprint. 5-10 products/second with multiprocessing.
@@ -73,7 +79,8 @@ Command-line tool for extracting property listings from Puerto Rican real estate
 | Records in production | **50M+** property records |
 | Countries covered | **4** (Spain, Argentina, Colombia, Puerto Rico) |
 | Portals scraped | **68+** Spanish real estate sites |
-| Anti-bot systems bypassed | Akamai Bot Manager v2, Cloudflare, Alibaba MTOP SDK |
+| Anti-bot systems bypassed | Cloudflare, Alibaba MTOP SDK |
+| Anti-bot systems deeply analyzed | Akamai Bot Manager v2 (512KB JS reverse-engineered) |
 | Concurrent scraping speed | Up to **667 items/minute** |
 | Infrastructure | Docker, PostgreSQL, automated monitoring |
 
@@ -81,11 +88,11 @@ Command-line tool for extracting property listings from Puerto Rican real estate
 
 I'm available for freelance projects in:
 
-- **Web Scraping** — From simple sites to heavily protected targets
-- **Anti-Bot Bypass** — Cloudflare, Akamai, DataDome, custom protections
-- **Data Engineering** — ETL pipelines, database design, data processing at scale
-- **Real Estate Data** — Specialized in property data extraction across LATAM and US markets
-- **API Reverse Engineering** — Finding and consuming undocumented APIs
+- **Protected Site Extraction** — Targets behind Cloudflare, DataDome, and custom anti-bot systems
+- **Data Pipeline as a Service** — End-to-end: extraction, cleaning, and structured delivery
+- **Real Estate Data (LATAM & Europe)** — 50M+ records across Spain, Argentina, Colombia, Puerto Rico
+- **AI-Enhanced Scraping** — LLM-powered extraction that adapts when sites change
+- **API Reverse Engineering** — Finding and consuming undocumented APIs for browserless extraction
 
 **Interested in working together?** Reach out via [email](mailto:datahive.scraping@gmail.com) or [LinkedIn](https://www.linkedin.com/in/johan-andres-cruz-forero/).
 
